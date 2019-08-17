@@ -1,0 +1,25 @@
+.table{
+  margin: 100px 0;
+  .head-row{
+    background:linear-gradient(to right, rgba(133, 133, 133, 0.02), rgba(133, 133, 133, 0.4),rgba(133, 133, 133, 0.02));
+    th{
+      padding-left: 12px; 
+    }
+  }
+  .row{
+    background: #fdfcfc;
+    &:hover{
+    background:linear-gradient(to right, rgba(229, 229, 229, 0.2), rgba(229, 229, 229, 0.9),rgba(229, 229, 229, 0.2));
+    }
+    td{
+      padding-left: 12px; 
+    }
+    button{
+      &:hover{
+        color: #FFF;
+        background: #33c3f0;
+        border-color: #33C3F0;
+      }
+    }
+  }
+}

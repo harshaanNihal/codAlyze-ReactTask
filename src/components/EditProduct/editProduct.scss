@@ -1,0 +1,28 @@
+.edit-form{
+margin-top:50px
+}
+.price-tier{
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  grid-gap:5px;
+  & > * {
+    margin: 10px 0;
+}
+}
+.radio-group__child{
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+  & > * {
+    margin: 5px;
+  }
+}
+.price-range{
+  grid-gap: 5px;
+  padding-left:10px;
+  align-items: center;
+
+ & > * {
+   margin: 0;
+ }
+}
