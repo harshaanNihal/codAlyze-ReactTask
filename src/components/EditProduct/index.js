@@ -46,7 +46,7 @@ class EditProduct extends Component {
 	handleSubmit = (e) => {
 		e.preventDefault();
 
-		let { name, weight, availability, productUrl, pricingTier, priceRangeIndex, isEditable } = this.state;
+		let { name, weight, availability, productUrl, pricingTier, isEditable } = this.state;
 		let priceRange = this.props.pricingInfo[this.state.pricingTier];
 		let data = {
 			name,
@@ -87,12 +87,12 @@ class EditProduct extends Component {
 					<div className="">
 						<label htmlFor="weight">Weight</label>
 						<input onChange={this.handleChange} className="u-full-width" value={this.state.weight}
-						 type='number' name='weight' placeholder='enter the weight' id="weight" />
+						 type='number' min='0' name='weight' placeholder='enter the weight' id="weight" />
 					</div>
 					<div className="">
 						<label htmlFor="availability">Availability</label>
 						<input className="u-full-width" onChange={this.handleChange} value={this.state.availability}
-							type='number' name='availability' placeholder='enter quantities available' id="availability" />
+							type='number' min='0' name='availability' placeholder='enter quantities available' id="availability" />
 					</div>
 					<div className="">
 						<label htmlFor="productUrl">ProductURL</label>
